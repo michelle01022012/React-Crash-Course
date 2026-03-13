@@ -7,12 +7,13 @@ function Modal({ title }) {
       <p className="modal__title">{title}</p>
       <div className="Modal__buttons">
         <button 
-        onClick={() => console.log("cancel)}"
+        onClick={() => console.log("cancel")}
         className="btn btn__cancel"
         >
         Cancel
         </button>
-      </button onClick={() => console.log("confirm")} className="btn"
+      <button onClick={() => console.log("confirm")} 
+      >
          Confirm
       </button>
     </div>
