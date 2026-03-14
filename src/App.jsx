@@ -21,10 +21,7 @@ function App() {
     setShowModal (false);
   }
 
-  useEffect() => {
-  },
-
-  useEffect(() => {
+   useEffect(() => {
   }, [showModal])
 
   useEffect(() => {
