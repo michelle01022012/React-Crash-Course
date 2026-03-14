@@ -2,18 +2,20 @@ import "./App.css";
 import Todo from "./components/Todo.jsx";
 import Title from "./components/Title.jsx";
 import Modal from "./components/Modal.jsx";
+import Counter from "./components/Counter.jsx"
 import React, { useState } from 'react';
 
 function App() {
-  const [showModal, setShowModal] = useState(true)
-  setShowModal(false)
+  return <Counter />
+  const [showModal, setShowModal] = useState(false)
+  
   return (
     <div>
       <Title />
       <div>
         <input type="text" onChange={(event) => {
         }} />
-        <button>Add ToDo</button>
+        <button onClick={()  => setShowModal(true)}>Add ToDo</button>
       </div>
       <div className="todo__wrapper">  
         <Todo title="Finish Frontend Simplified" />
