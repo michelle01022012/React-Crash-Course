@@ -3,23 +3,33 @@ import Todo from "./components/Todo.jsx";
 import Title from "./components/Title.jsx";
 import Modal from "./components/Modal.jsx";
 import Counter from "./components/Counter.jsx"
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 
 function App() {
   const [showModal, setShowModal] = useState(false)
 
   function onTodoDelete() {
-    setShowModal(true)
+    setShowModal(true);
    }
 
   function cancelModal() {
-    setShowModal(false)
+    setShowModal(false);
   }
 
   function confirmModal() {
-    setShowModal (false)
+    setShowModal (false);
   }
+
+  useEffect() => {
+  },
+
+  useEffect(() => {
+  }, [showModal])
+
+  useEffect(() => {
+    console.log('EVERY render')
+  })
 
   return (
     <div>

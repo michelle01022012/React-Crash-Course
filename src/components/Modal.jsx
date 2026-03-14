@@ -7,7 +7,7 @@ function Modal({ title, cancelModal, confirmModal }) {
       <p className="modal__title">{title}</p>
       <div className="Modal__buttons">
         <button 
-        onClick={CancelModal}
+        onClick={cancelModal}
         className="btn btn__cancel"
         >
         Cancel
@@ -20,5 +20,5 @@ function Modal({ title, cancelModal, confirmModal }) {
   <div className="backdrop" />
  </>
  );
-
+}
 export default Modal;
