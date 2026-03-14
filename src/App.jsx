@@ -35,7 +35,13 @@ function App() {
         <Todo onTodoDelete={onTodoDelete} title="Finish Interview Section" />
         <Todo onTodoDelete={onTodoDelete} title="Land a 100k Job!" />
        </div>
-     {showModal && <Modal cancelModal={cancelModal={conformModal} title="Confirm Delete?" />}
+     {showModal && (
+      <Modal
+        cancelModal={cancelModal}
+        confirmModal={confirmModal}
+        title="Confirm Delete?"
+       />
+     )}
     </div>
   );
 }
