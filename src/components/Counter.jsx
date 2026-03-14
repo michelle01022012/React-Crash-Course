@@ -8,6 +8,7 @@ function Counter() {
     }
 
     function addMinus() {
+        setArr(prevArr => [ ...prevArr, "-"])
     }
     
     return (
