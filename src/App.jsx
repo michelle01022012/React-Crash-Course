@@ -1,8 +1,8 @@
 import "./App.css";
 import { Browser as Router, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home.jsx'
-import About from "./pages/About";
-import Contact from "./pages/Contact";
+import Home from './pages/Pages/Home.jsx'
+import About from './pages/Pages/About.jsx'
+import Contact from './pages/Pages/Contact.jsx'
 
 
 function App() {
