@@ -1,10 +1,10 @@
-import { useParms } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import React, { useEffect } from 'react';
 
 function Users() {
-    const { username } = useParms()
+    const { username } = useParams()
     useEffect (() => {
-        //fetch('https://api.instagram.com/$(username}')
+      // fetch('https://api.instagram.com/$(username}')
     })
     return <h1>username</h1>
 }
