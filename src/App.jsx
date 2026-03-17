@@ -4,7 +4,7 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Nav from "./components/Nav";
-import Users from "./pages/Users";
+import Users from "./Pages/Users";
 
 function App() {
    return (
@@ -12,7 +12,7 @@ function App() {
        <Nav />
         <Routes>
          <Route path="/" element={<Home />} />
-         <Route path="/users/:name" element={<Users />} />
+         <Route path="/users/:username" element={<Users />} />
         </Routes>
       </Router>
     );
