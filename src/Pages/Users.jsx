@@ -6,7 +6,7 @@ function Users() {
     useEffect (() => {
       // fetch('https://api.instagram.com/$(username}')
     })
-    return <h1>username</h1>
+    return <h1>{username}</h1>
 }
 
 export default Users
