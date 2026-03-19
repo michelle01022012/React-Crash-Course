@@ -14,15 +14,24 @@ function Home() {
     useEffect(() => {
         setTimeout(() => {
           fetchUsers();
+        }, 500);
 }, []);
+
+const pixels = "3px";
 
     return (
       <div>
-        {users.length > 0
-      ? <h1>{users[0]?.name}</h1>
-      :  <h1>Loading...</h1>
-    }
+       {users.map(() => {
+     return (
+      <div style={{ border: '${pixels} solid black' }}>
+       <div>{users[0]?.id}</div>
+       <div>{users[0]?.name}</div>
+       <div>{users[0]?.email}</div>
+       <div>{users[0]?.username}</div>
     </div>
+);
+})}
+</div>
 );
 }
 
