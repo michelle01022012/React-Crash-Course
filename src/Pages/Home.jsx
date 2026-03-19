@@ -21,18 +21,16 @@ const pixels = "3px";
 
     return (
       <div>
-       {users.map(() => {
-     return (
-      <div style={{ border: '${pixels} solid black' }}>
-       <div>{users[0]?.id}</div>
-       <div>{users[0]?.name}</div>
-       <div>{users[0]?.email}</div>
-       <div>{users[0]?.username}</div>
+       {users.map((user) => (
+         <div key={user.id} style={{ border: `${pixels} solid black` }}>
+       <div>{user?.id}</div>
+       <div>{user?.name}</div>
+       <div>{user?.email}</div>
+       <div>{user?.username}</div>
     </div>
-);
-})}
-</div>
-);
+   ))}
+   </div>
+  );
 }
 
 export default Home
